@@ -18,7 +18,8 @@
     "ejs": "~2.4.1",
     "express": "~4.13.4",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "togeojson": "^0.16.0"
   },
   "devDependencies": {
     "gulp-sourcemaps": "^1.9.1",

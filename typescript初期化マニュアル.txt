@@ -1,0 +1,36 @@
+expressを実行してひな形を生成
+階層に移り初期化
+ npm install
+ファイル構成設計
+・public-js
+        -css
+        -images
+// 同じ階層でないとmapデバッグが出来ない。困った
+/*　これはなし
+・typescript-lib 共通クラス
+     -cliant クライアントサイドクラス
+     -server サーバサイドクラス
+*/
+
+・定義
+.gitignore定義
+
+bin/
+node_modules/
+public/js/**/*.js
+public/images/
+public/lib/
+public/routes/**/*.js
+
+glupfile.js設定
+　tsコンパイル
+
+・libインストール
+npm install --save-dev gulp-typescript,gulp-sourcemaps
+
+npm install -save
+    @types/es6-promise
+    @types/express
+    @types/mongodb
+
+

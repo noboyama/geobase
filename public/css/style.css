@@ -1,8 +1,80 @@
 body {
-  padding: 50px;
+  padding-top: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+.height100 {
+	height: 100% ;
+}
+
+.width100 {
+	width: 100% ;
+}
+
+#WorkDiv{
+	padding: 0px;
+	margin: 0px;
+}
+
+#WayListBase{
+	padding: 0px;
+	/*background: cyan ; */
+	height: 100% ;
+}
+#Map {
+	padding: 0px;
+	/* background: coral ; */
+	height: 100% ;
+}
+#PropertyBase {
+	padding: 0px;
+	/*background: blue ; */
+	height: 100% ;
+}
+/* WayList Selected */
+#WayList {
+	padding: 1em;
+	overflow-y: auto ;
+	height: 100% ;
+	/* background: #f0f0f0; */
+}
+#WayList .ui-selecting {
+	background: #cccccc;
+}
+#WayList .ui-selected {
+	background: #ff8888;
+}
+#WayList .selecable {
+	margin: 1em;
+	background: #e5e5e5;
+	color: #666666;
+}
+#WayList .line:hover {
+	background: #dfdfff;
+}
+
+/*Property*/
+#Property {
+	padding: 1em;
+	overflow-y: auto ;
+	height: 100% ;
+	margin: 0px 15px 0px 15px ;
+}
+
+#Property .line {
+	border: 1px solid black ;
+	padding: 2px ;
+	margin-bottom: 2px ;
+}
+#Property .name {
+	margin: 0px 0px 1px 0px ;
+}
+#Property .value {
+	padding-left: 5px ;
+}
+
+

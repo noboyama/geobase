@@ -1,0 +1,12 @@
+/// <reference path="./../../node_modules/@types/express/index.d.ts" />
+/// <reference path="./../../node_modules/@types/mongodb/index.d.ts" />
+/// <reference path="./../../node_modules/@types/es6-promise/index.d.ts" />
+var express = require('express');
+var router = express.Router();
+/* GET home page. */
+router.get('/', function (req, res, next) {
+    res.render('index', { title: 'Express' });
+});
+module.exports = router;
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInR5cGVzY3JpcHQvc2VydmVyL2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBLHVFQUF1RTtBQUN2RSx1RUFBdUU7QUFDdkUsMkVBQTJFO0FBRTNFLElBQUksT0FBTyxHQUFHLE9BQU8sQ0FBQyxTQUFTLENBQUMsQ0FBQztBQUNqQyxJQUFJLE1BQU0sR0FBRyxPQUFPLENBQUMsTUFBTSxFQUFFLENBQUM7QUFFOUIsb0JBQW9CO0FBQ3BCLE1BQU0sQ0FBQyxHQUFHLENBQUMsR0FBRyxFQUFFLFVBQVMsR0FBRyxFQUFFLEdBQUcsRUFBRSxJQUFJO0lBQ3JDLEdBQUcsQ0FBQyxNQUFNLENBQUMsT0FBTyxFQUFFLEVBQUUsS0FBSyxFQUFFLFNBQVMsRUFBRSxDQUFDLENBQUM7QUFDNUMsQ0FBQyxDQUFDLENBQUM7QUFFSCxNQUFNLENBQUMsT0FBTyxHQUFHLE1BQU0sQ0FBQyIsImZpbGUiOiJ0eXBlc2NyaXB0L3NlcnZlci9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4vLy8gPHJlZmVyZW5jZSBwYXRoPVwiLi8uLi8uLi9ub2RlX21vZHVsZXMvQHR5cGVzL2V4cHJlc3MvaW5kZXguZC50c1wiIC8+XHJcbi8vLyA8cmVmZXJlbmNlIHBhdGg9XCIuLy4uLy4uL25vZGVfbW9kdWxlcy9AdHlwZXMvbW9uZ29kYi9pbmRleC5kLnRzXCIgLz5cclxuLy8vIDxyZWZlcmVuY2UgcGF0aD1cIi4vLi4vLi4vbm9kZV9tb2R1bGVzL0B0eXBlcy9lczYtcHJvbWlzZS9pbmRleC5kLnRzXCIgLz5cclxuXHJcbnZhciBleHByZXNzID0gcmVxdWlyZSgnZXhwcmVzcycpO1xyXG52YXIgcm91dGVyID0gZXhwcmVzcy5Sb3V0ZXIoKTtcclxuXHJcbi8qIEdFVCBob21lIHBhZ2UuICovXHJcbnJvdXRlci5nZXQoJy8nLCBmdW5jdGlvbihyZXEsIHJlcywgbmV4dCkge1xyXG4gIHJlcy5yZW5kZXIoJ2luZGV4JywgeyB0aXRsZTogJ0V4cHJlc3MnIH0pO1xyXG59KTtcclxuXHJcbm1vZHVsZS5leHBvcnRzID0gcm91dGVyOyJdfQ==
