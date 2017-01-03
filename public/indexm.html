@@ -24,6 +24,16 @@
 	<link rel='stylesheet' href='/css/style.css' />
 	<script src="/js/main.js"></script>
 </head>
+<style>
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body, #Map {
+    height: 100vh;
+    width: 100vw;
+}
+</style>
 <script>
 	// mapオブジェクト
 	var g_LeafletMap = null ;
@@ -38,61 +48,19 @@
 			return results[1] || 0;
 		}
 	}
-	function resize()
-	{
-		console.log('resized : ' +	($(document).height() - 55)  );
-		$("#WorkDiv").height($(document).height() - 55  );
-	}
+
 	// 初期化
 	$(document).ready(function(){
 		/* Ajax初期化 */
 		$.ajaxSetup({ cache: false });
-		resize() ;
 		// パラメータにfileがあればそれを読み込む
 		var sfile = urlParam("file") ;
 		g_LeafletMap = new  LeafLetMap( "Map", sfile )  ;
 		var timer = false;
-		$(window).resize(function() {
-			if (timer !== false) {
-				clearTimeout(timer);
-			}
-			timer = setTimeout(function() {
-				resize() ;
-			}, 200);
-		});
 	});
 </script>
 <body>
-<!-- メインエリア -->
-<div class="container-fluid">
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">GeoBase</a>
-			</div>
-			<div class="navbar-collapse collapse" id="navbar">
-				<form class="navbar-form navbar-right">
-					<!--input class="form-control" type="text" placeholder="Search..."-->
-				</form>
-			</div>
-		</div>
-	</nav>
+<div class="col-xs-12 col-sm-10  col-md-8 height100 " id='Map'>
 </div>
-<!-- メインエリア -->
-<div class="container-fluid  row width100 " id='WorkDiv'>
-	<!--div class="row" id='WorkDiv'-->
-		<div class="hidden-xs col-sm-2 col-md-2 sidebar height100  " id="WayListBase" >
-			<ul class="nav nav-sidebar width100" id="WayList">
-			</ul>
-		</div>
-		<div class="col-xs-12 col-sm-10  col-md-8 height100 " id='Map'>
-		</div>
-		<div class="hidden-xs hidden-sm col-md-2 row " id="PropertyBase">
-			<form class="form-horizontal height100 width100"  role="form" id='Property'>
-			</form>
-		</div>
-	<!--/div -->
-</div>
-
 </body>
 </html>
